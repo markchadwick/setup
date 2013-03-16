@@ -3,6 +3,8 @@
   "user": "mchadwick",
 
   "run_list": [
+    "recipe[vim::default]",
+    "recipe[vim::plugins]",
     "recipe[golang::default]"
   ]
 }

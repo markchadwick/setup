@@ -1,0 +1,30 @@
+call pathogen#infect()
+
+" filetype plugin indent on
+filetype plugin on
+
+set tabstop=2
+set expandtab
+syn on
+set hls
+set nu
+set cursorline
+set showtabline=2
+set textwidth=80
+set ml
+set t_Co=256
+
+nmap ,, :tabnew<CR>
+nmap ,. :tabnext<CR>
+nmap ., :tabpre<CR>
+
+map <leader>t :FufFile<CR>
+
+set wildmode=list:longest
+set shortmess=atI
+set mouse=a
+match ErrorMsg '\%>80v.\+'
+
+set rtp+=$GOROOT/misc/vim
+
+colorscheme molokai
