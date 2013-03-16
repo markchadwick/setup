@@ -23,7 +23,7 @@ link node[:golang][:root] do
   to "#{node[:golang][:install]}/go"
 end
 
-include_recipe 'bash::default'
+include_recipe 'shell::default'
 template "/home/#{node[:user]}/.bashrc.d/golang" do
   source  'bash-init'
   mode    0755
