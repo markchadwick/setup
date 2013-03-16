@@ -1,0 +1,8 @@
+{
+  "arch": "386",
+  "user": "mchadwick",
+
+  "run_list": [
+    "recipe[golang::default]"
+  ]
+}

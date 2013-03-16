@@ -1,0 +1,6 @@
+export GOROOT=<%= node[:golang][:root] %>
+export GOOS=linux
+export GOARCH=<%= node[:arch] %>
+export GOMAXPROCS=2
+
+export PATH=$GOROOT/bin:$PATH
