@@ -1,0 +1,10 @@
+{
+  "arch": "amd64",
+  "user": "mchadwick",
+
+  "run_list": [
+    "recipe[golang::default]",
+    "recipe[projects::honk]",
+    "recipe[projects::work]"
+  ]
+}

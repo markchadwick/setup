@@ -30,3 +30,9 @@ git "#{VIMHOME}/bundle/golang" do
   reference   'master'
   action      :sync
 end
+
+git "#{VIMHOME}/bundle/pyflakes" do
+  repository  'https://github.com/kevinw/pyflakes-vim.git'
+  reference   'master'
+  action      :sync
+end
