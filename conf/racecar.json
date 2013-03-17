@@ -3,6 +3,7 @@
   "user": "mchadwick",
 
   "run_list": [
+    "recipe[vim::default]",
     "recipe[vim::plugins]"
   ]
 }

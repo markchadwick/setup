@@ -14,15 +14,27 @@ set textwidth=80
 set ml
 set t_Co=256
 
+let g:tagbar_type_coffee = {
+      \ 'ctagstype' : 'coffee',
+      \ 'kinds' : [
+      \   'c:classes',
+      \   'f:functions',
+      \   'v:variables'
+      \ ],
+      \ }
+" let g:Powerline_symbols = 'fancy'
+
 nmap ,, :tabnew<CR>
 nmap ,. :tabnext<CR>
 nmap ., :tabpre<CR>
 
 map <leader>t :FufFile<CR>
 
+
 set wildmode=list:longest
 set shortmess=atI
 set mouse=a
+set laststatus=2
 match ErrorMsg '\%>80v.\+'
 
 set rtp+=$GOROOT/misc/vim

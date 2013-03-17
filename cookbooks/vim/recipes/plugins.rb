@@ -32,3 +32,36 @@ end
 vim_plugin 'pyflakes' do
   repository  'https://github.com/kevinw/pyflakes-vim.git'
 end
+
+vim_plugin 'l9' do
+  repository  'https://github.com/vim-scripts/L9.git'
+end
+
+vim_plugin 'fuzzy-finder' do
+  repository  'https://github.com/vim-scripts/FuzzyFinder.git'
+end
+
+vim_plugin 'less-css' do
+  repository  'https://github.com/groenewege/vim-less.git'
+end
+
+vim_plugin 'stylus-css' do
+  repository  'https://github.com/wavded/vim-stylus.git'
+end
+
+vim_plugin 'scala' do
+  repository  'https://github.com/derekwyatt/vim-scala.git'
+end
+
+vim_plugin 'coffeescript' do
+  repository  'https://github.com/kchmck/vim-coffee-script.git'
+end
+
+vim_plugin 'trailing-whitespace' do
+  repository  'https://github.com/bronson/vim-trailing-whitespace.git'
+end
+
+vim_plugin 'powerline' do
+  repository  'https://github.com/Lokaltog/vim-powerline.git'
+  reference   'develop'
+end
