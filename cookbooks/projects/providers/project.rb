@@ -22,6 +22,7 @@ action :add do
     repository  new_resource.repository
     reference   new_resource.reference
     action      :sync
+    not_if      { ::File.directory? root }
   end
 
   link new_resource.link_to do

@@ -3,7 +3,6 @@
   "user": "mchadwick",
 
   "run_list": [
-    "recipe[golang::default]",
-    "recipe[projects::default]"
+    "recipe[vim::plugins]"
   ]
 }

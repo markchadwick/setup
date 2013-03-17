@@ -25,14 +25,10 @@ end
 # Plugins
 # -----------------------------------------------------------------------------
 
-git "#{VIMHOME}/bundle/golang" do
+vim_plugin 'golang' do
   repository  'https://github.com/jnwhiteh/vim-golang.git'
-  reference   'master'
-  action      :sync
 end
 
-git "#{VIMHOME}/bundle/pyflakes" do
+vim_plugin 'pyflakes' do
   repository  'https://github.com/kevinw/pyflakes-vim.git'
-  reference   'master'
-  action      :sync
 end
