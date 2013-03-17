@@ -18,11 +18,13 @@ action :add do
     "#{node[:projects][:home]}/#{new_resource.name}"
   end
 
+  force = new_resource.force or not ::File.directory? root
+
   git root do
     repository  new_resource.repository
     reference   new_resource.reference
     action      :sync
-    not_if      { ::File.directory? root }
+    only_if     { new_resource.force or not ::File.directory? root }
   end
 
   link new_resource.link_to do

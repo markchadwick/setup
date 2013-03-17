@@ -1,0 +1,20 @@
+Host *
+  ForwardAgent yes
+
+Host hipstersinc.com
+  User mchadw
+
+Host synack
+  Port 9899
+
+Host 192.168.1.2 localhost provy.vistarmedia.com
+  Port 5122
+
+Host slie.ath.cx
+  Port 29418
+
+Host gerrit.vistarmedia.com
+  Port 29418
+
+Host box
+  Port  2222

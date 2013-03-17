@@ -1,0 +1,2 @@
+name 	  'vim'
+depends 'homedir'
