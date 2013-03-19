@@ -62,6 +62,6 @@ vim_plugin 'trailing-whitespace' do
 end
 
 vim_plugin 'powerline' do
-  repository  'https://github.com/Lokaltog/vim-powerline.git'
+  repository  'https://github.com/Lokaltog/powerline.git'
   reference   'develop'
 end
