@@ -1,4 +1,4 @@
-SOLO=chef-solo
+SOLO=/usr/local/bin/chef-solo
 config=./conf/$(shell hostname).json
 
 all:

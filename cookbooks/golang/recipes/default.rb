@@ -7,6 +7,12 @@ directory node[:golang][:install] do
   mode  0755
 end
 
+directory node[:golang][:path] do
+  user  node[:user]
+  group node[:user]
+  mode  0755
+end
+
 remote_file LOCAL_DIST do
   source    node[:golang][:disturl]
   notifies  :run, 'bash[extract-dist]'

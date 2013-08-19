@@ -1,4 +1,5 @@
 export GOROOT=<%= node[:golang][:root] %>
+export GOPATH=<%= node[:golang][:path] %>
 export GOOS=linux
 export GOARCH=<%= node[:arch] %>
 export GOMAXPROCS=2
