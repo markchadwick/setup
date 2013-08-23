@@ -13,6 +13,10 @@ Host 192.168.1.2 localhost provy.vistarmedia.com
 Host slie.ath.cx
   Port 29418
 
+Host racecar
+  Host 71.162.213.108
+  Port 5122
+
 Host gerrit.vistarmedia.com
   Port 29418
 

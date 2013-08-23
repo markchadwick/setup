@@ -4,4 +4,4 @@ export GOOS=linux
 export GOARCH=<%= node[:arch] %>
 export GOMAXPROCS=2
 
-export PATH=$GOROOT/bin:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH

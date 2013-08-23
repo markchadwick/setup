@@ -39,4 +39,5 @@ match ErrorMsg '\%>80v.\+'
 set rtp+=$GOROOT/misc/vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+set textwidth=80
 colorscheme molokai
