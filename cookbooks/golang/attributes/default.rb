@@ -1,4 +1,3 @@
-# default[:golang][:version]   = '1.0.3'
 default[:golang][:version]   = '1.1.2'
 default[:golang][:root]      = "/home/#{node[:user]}/opt/go"
 default[:golang][:install]   = "/home/#{node[:user]}/opt/go-#{node[:golang][:version]}"

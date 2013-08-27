@@ -1,0 +1,2 @@
+name    'spatialite'
+depends 'srcinstall'
