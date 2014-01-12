@@ -39,5 +39,9 @@ match ErrorMsg '\%>80v.\+'
 set rtp+=$GOROOT/misc/vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
+
 set textwidth=80
 colorscheme molokai

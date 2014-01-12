@@ -65,3 +65,7 @@ vim_plugin 'powerline' do
   repository  'https://github.com/Lokaltog/powerline.git'
   reference   'develop'
 end
+
+vim_plugin 'tslime.vim' do
+  repository  'http://github.com/jgdavey/tslime.vim'
+end
