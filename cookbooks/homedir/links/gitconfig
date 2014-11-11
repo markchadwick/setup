@@ -1,0 +1,33 @@
+[user]
+  name = Mark Chadwick
+  # email = mark.chadwick@gmail.com
+  email = mark@vistarmedia.com
+[merge]
+  tool = meld
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow # bold
+  frag = magenta # bold
+  old = red # bold
+  new = green # bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+  excludesfile = /home/mchadwick/.gitignore
+[alias]
+  tree = log --graph
+  shorttree = log --graph --pretty=oneline --abbrev-commit
+  lc = log ORIG_HEAD.. --stat --no-merges
+  shortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+# vim: syntax=gitconfig

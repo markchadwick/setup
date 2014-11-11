@@ -7,3 +7,11 @@ end
 homedir_link "~/.vimrc" do
   to 'vimrc'
 end
+
+homedir_link "~/.gitconfig" do
+  to 'gitconfig'
+end
+
+homedir_link "~/.gitignore" do
+  to 'gitignore'
+end

@@ -26,7 +26,7 @@ end
 # -----------------------------------------------------------------------------
 
 vim_plugin 'golang' do
-  repository  'https://github.com/jnwhiteh/vim-golang.git'
+  repository  'https://github.com/fatih/vim-go.git'
 end
 
 vim_plugin 'pyflakes' do
