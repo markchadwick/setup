@@ -13,6 +13,7 @@ set showtabline=2
 set textwidth=80
 set ml
 set t_Co=256
+set directory=$HOME/.vim/swapfiles/
 
 let g:tagbar_type_coffee = {
       \ 'ctagstype' : 'coffee',
@@ -38,6 +39,10 @@ match ErrorMsg '\%>80v.\+'
 
 set rtp+=$GOROOT/misc/vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" go lint
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+" autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <C-c><C-c> <Plug>NormalModeSendToTmux
