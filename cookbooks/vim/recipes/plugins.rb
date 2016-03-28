@@ -69,3 +69,7 @@ end
 vim_plugin 'tslime.vim' do
   repository  'http://github.com/jgdavey/tslime.vim'
 end
+
+vim_plugin 'vim-bazel' do
+  repository 'https://github.com/davidzchen/vim-bazel'
+end
