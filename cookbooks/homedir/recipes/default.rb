@@ -1,5 +1,5 @@
-
 directory "/home/#{node[:user]}/.ssh"
+
 homedir_link "~/.ssh/config" do
   to 'ssh_config'
 end
@@ -14,4 +14,8 @@ end
 
 homedir_link "~/.gitignore" do
   to 'gitignore'
+end
+
+homedir_link "~/.tmux.conf" do
+  to 'tmux.conf'
 end
