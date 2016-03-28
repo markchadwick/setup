@@ -2,9 +2,10 @@
 LOCAL_DIST = "#{node[:golang][:install]}/source.tar.gz"
 
 directory node[:golang][:install] do
-  user  node[:user]
-  group node[:user]
-  mode  0755
+  user      node[:user]
+  group     node[:user]
+  recursive true
+  mode      0755
 end
 
 directory node[:golang][:path] do

@@ -1,0 +1,10 @@
+{
+  "arch": "amd64",
+  "user": "mchadwick",
+
+  "run_list": [
+    "recipe[golang::default]",
+    "recipe[homedir::default]",
+    "recipe[vim::default]"
+  ]
+}
